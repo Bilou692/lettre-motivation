@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettre de motivation - Askri Bilal</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --light-accent: #e8f4fc;
+            --text-color: #333;
+            --light-gray: #f8f9fa;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-gray);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .sender-info, .recipient-info {
+            max-width: 45%;
+        }
+
+        .sender-info {
+            border-left: 3px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .recipient-info {
+            border-right: 3px solid var(--accent-color);
+            padding-right: 15px;
+            text-align: right;
+        }
+
+        .date {
+            text-align: right;
+            margin: 20px 0 30px;
+            font-style: italic;
+            color: #666;
+        }
+
+        .subject {
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: center;
+            padding: 10px;
+            background-color: var(--light-accent);
+            border-radius: 4px;
+        }
+
+        .greeting {
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .content ul {
+            margin: 15px 0 15px 40px;
+        }
+
+        .content li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .skills {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: var(--light-accent);
+            border-radius: 6px;
+        }
+
+        .skills h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .closing {
+            margin-top: 30px;
+        }
+
+        .signature {
+            margin-top: 50px;
+            font-weight: bold;
+            text-align: right;
+            font-size: 1.1em;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 25px 0;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 20px;
+            }
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .header {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .sender-info, .recipient-info {
+                max-width: 100%;
+                border: none;
+                padding: 0;
+                text-align: left;
+            }
+            .sender-info {
+                border-bottom: 2px solid var(--accent-color);
+                padding-bottom: 10px;
+            }
+            .recipient-info {
+                border-bottom: 2px solid var(--accent-color);
+                padding-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="sender-info">
+                <p><strong>Askri Bilal</strong><br>
+                8 rue Quivogne<br>
+                69002 Lyon<br>
+                askri.bilal@hotmail.fr<br>
+                06.98.64.05.73</p>
+            </div>
+            <div class="recipient-info">
+                <p><strong>[Nom de l'entreprise]</strong><br>
+                [Adresse de l'entreprise]<br>
+                [Code postal et ville]</p>
+            </div>
+        </div>
+
+        <div class="date">
+            <p>Lyon, le [Date]</p>
+        </div>
+
+        <div class="subject">
+            <p>Objet : Candidature pour un poste d'alternant développeur web full stack</p>
+        </div>
+
+        <div class="greeting">
+            <p>Madame, Monsieur,</p>
+        </div>
+
+        <div class="content">
+            <p>Actuellement en formation de développeur full stack chez <span class="highlight">ADA Tech School</span>, je suis à la recherche d'une opportunité d'alternance qui me permettrait de mettre en pratique mes compétences techniques tout en contribuant activement au développement de projets. C'est avec enthousiasme que je vous soumets ma candidature pour rejoindre votre équipe de développement.</p>
+
+            <p>Votre entreprise, reconnue pour son expertise technique et son approche innovante, correspond parfaitement à l'environnement professionnel dans lequel je souhaite évoluer et approfondir mes connaissances. Je suis particulièrement attiré par la diversité des projets sur lesquels vous travaillez ainsi que par les valeurs d'excellence et d'innovation qui caractérisent votre société.</p>
+
+            <div class="skills">
+                <h3>Compétences techniques</h3>
+                <p>Ma formation chez ADA Tech School m'a permis d'acquérir une base technique en développement web, notamment :</p>
+                <ul>
+                    <li>Les langages front-end (HTML, CSS, JavaScript) et des frameworks modernes comme Vue.js</li>
+                    <li>Compétences en développement back-end avec PHP, Laravel et SQL</li>
+                    <li>Apprentissage de l'intégration continue et déploiement (CI/CD)</li>
+                    <li>Connaissance des principes d'architecture logicielle et de conception d'API</li>
+                </ul>
+            </div>
+
+            <p>Mon projet principal actuel consistera en la création d'un site de gestion pour un garage automobile de luxe. Ce travail me permettra de développer des compétences pratiques en conception d'interfaces utilisateur réactives et intuitives, en architecture back-end robuste et évolutive, ainsi qu'en gestion efficace des données.</p>
+
+            <p>Je suis épris par le développement web et j'effectue régulièrement des recherches sur les dernières évolutions technologiques. Mon approche rigoureuse du code, combinée à ma créativité dans la résolution de problèmes, me permet d'aborder les défis techniques avec efficacité et méthode.</p>
+
+            <p>Ce qui me motive particulièrement dans la recherche d'une alternance, c'est la possibilité d'apprendre et de grandir professionnellement dans un environnement stimulant, aux côtés d'experts du secteur, tout en apportant ma contribution à des projets concrets et significatifs.</p>
+
+            <hr>
+
+            <p>Je suis convaincu que mon sens de l'analyse, ma capacité d'apprentissage rapide et ma passion pour le développement web seraient des atouts pour votre entreprise. Mon profil d'apprenant motivé et ma détermination à exceller dans ce domaine correspondent, je l'espère, aux qualités que vous recherchez pour un alternant.</p>
+
+            <p>Disponible et flexible, je serais honoré de pouvoir échanger avec vous lors d'un entretien afin de vous présenter plus en détail mon parcours et ma motivation à rejoindre votre équipe.</p>
+        </div>
+
+        <div class="closing">
+            <p>Je vous remercie par avance de l'attention que vous porterez à ma candidature et vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.</p>
+        </div>
+
+        <div class="signature">
+            <p>Askri Bilal</p>
+        </div>
+    </div>
+</body>
+</html>
